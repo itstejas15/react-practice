@@ -17,7 +17,7 @@ const Hooks = () => {
         <button onClick={() => navigate("/hooks/useLayoutEffect")}>useLayoutEffect</button>
         <button onClick={() => navigate("/hooks/useDebugValue")}>useDebugValue</button>
         <button onClick={() => navigate("/hooks/useImperativeHandle")}>useImperativeHandle</button>
-        <button onClick={() => navigate("/hooks/customHooks")}>customHooks</button>
+        <button onClick={() => navigate("/hooks/customHook")}>customHook</button>
       </div>
     </div>
   );

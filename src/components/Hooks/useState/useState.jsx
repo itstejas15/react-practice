@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const UseStateDemo = () => {
   const [value, setValue] = useState(1);
@@ -15,8 +16,9 @@ const UseStateDemo = () => {
   }
 
   return (
-    <div>
+    <div style={{margin: '2rem'}}>
       <h1>useState:</h1><p>Add useState notes here</p>
+      <p><Link to={'https://www.youtube.com/watch?v=5e9_hp0nh1Q'}> Reference</Link></p>
       <button onClick={handleClick}>Change States</button>
       {value}, {string},{array}
     </div>
