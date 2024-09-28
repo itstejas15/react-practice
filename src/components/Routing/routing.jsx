@@ -15,6 +15,7 @@ import JsMethods from '../JsMethods/jsMethods';
 import Tables from '../Table';
 import UseContextDemo from '../Hooks/useContext/useContext';
 import UseMemoDemo from '../Hooks/useMemo/useMemo';
+import UseCallbackDemo from '../Hooks/useCallback/useCallback';
 
 const Routing = () => {
   return (
@@ -32,6 +33,7 @@ const Routing = () => {
           <Route path='/hooks/useEffect' element={<UseEffectDemo />} />
           <Route path='/hooks/useContext' element={<UseContextDemo />} />
           <Route path='/hooks/useMemo' element={<UseMemoDemo />} />
+          <Route path='/hooks/useCallback' element={<UseCallbackDemo />} />
           <Route path='/inputTypes' element={<InputTypes />} />
           <Route path='/localStorage' element={<LocalStorage />} />
           <Route path='/jsMethods' element={<JsMethods />} />

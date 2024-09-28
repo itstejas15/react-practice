@@ -5,7 +5,7 @@ const UseMemoDemo = () => {
   const [minus, setMinus] = useState(0)
 
   const multiplication = useMemo(() => {
-    console.log('multiplication functio')
+    console.log('multiplication function')
     return add * 10
   }, [add])
   return (
