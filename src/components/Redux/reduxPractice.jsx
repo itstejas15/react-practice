@@ -2,10 +2,10 @@
 // imr shortcut to import react
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { 
+import {
   getState,
   // setValue, 
-  setState 
+  setState
 } from '../../store/reducers/reduxSlice';
 
 const Redux = () => {
@@ -25,10 +25,10 @@ const Redux = () => {
   };
 
   return (
-    <div style={{ margin: "4rem"}}>
+    <div style={{ margin: "4rem" }}>
       <h1>Hii Redux</h1> <br />
 
-      <div style={{ display: "flex", gap: "6px"}}>
+      <div style={{ display: "flex", gap: "6px" }}>
         <button onClick={handleRemove}> - </button>
         <input value={newVar} />
         <button onClick={handleAdd}> + </button>

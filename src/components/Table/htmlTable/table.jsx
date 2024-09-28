@@ -40,13 +40,13 @@ const Table = () => {
     }
   ]
   return (
-    <div>
+    <div style={{margin: '1rem'}}>
       <h3>1. Basic Table</h3>
       <table border={1}>
         <thead>
           <tr>
             <th style={{width: '3rem'}}>ID</th>
-            <th style={{width: '14rem'}}>Name</th>
+            <th style={{width: '12rem'}}>Name</th>
             <th>Age</th>
             <th>Gender</th>
           </tr>

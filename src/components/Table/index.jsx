@@ -3,10 +3,13 @@ import Table from './htmlTable/table';
 
 const Tables = () => {
   return (
-    <div style={{margin: '2rem'}}>
-      <h1>Tables</h1>
-      <Table />
-    </div>
+    <>
+      <h1 style={{margin: '1rem'}}>Tables</h1>
+      <div style={{ margin: '2rem', display: 'flex', flexWrap: 'wrap' }}>
+        <Table />
+        <Table />
+      </div>
+    </>
   );
 }
 
