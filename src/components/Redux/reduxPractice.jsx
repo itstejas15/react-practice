@@ -1,17 +1,27 @@
 // sfc shortcut to create arrow function
 // imr shortcut to import react
-import React, { useState } from 'react';
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { 
+  getState,
+  // setValue, 
+  setState 
+} from '../../store/reducers/reduxSlice';
 
 const Redux = () => {
   // usf - shortcut to create useState
-  const [state, setState] = useState(0);
+  // const [state, setValue] = useState(0);
+  // const state = useSelector((state) => state.redux.value);
+  const newVar = useSelector(getState);
+
+  const dispatch = useDispatch();
 
   const handleAdd = () => {
-    setState(state + 1);
+    dispatch(setState(newVar + 1));
   };
 
   const handleRemove = () => {
-    setState(state - 1);
+    dispatch(setState(newVar - 1));
   };
 
   return (
@@ -20,7 +30,7 @@ const Redux = () => {
 
       <div style={{ display: "flex", gap: "6px"}}>
         <button onClick={handleRemove}> - </button>
-        <input value={state} />
+        <input value={newVar} />
         <button onClick={handleAdd}> + </button>
       </div>
 

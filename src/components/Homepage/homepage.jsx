@@ -4,6 +4,9 @@ import './homepage.css';
 
 const HomePage = () => {
   const navigate = useNavigate()
+  // const getData = localStorage.getItem('value')
+  // const getDataFromSession = sessionStorage.getItem('value')
+  // const cookie = document.cookie
   return (
     <div className='App'>
       <div className="App-header" >
@@ -15,11 +18,19 @@ const HomePage = () => {
           <button onClick={() => navigate("/footer")}>Footer</button>
           <button onClick={() => navigate("/practice")}>Practice</button>
           <button onClick={() => navigate("/redux")}>Redux</button>
-          <button>Btn4</button>
-          <input type="week"></input>
-          <button>Btn5</button>
-          <button>Btn6</button>
+          <button onClick={() => navigate("/hooks")}>Hooks</button>
+          <button onClick={() => navigate("/inputTypes")}>Input Types</button>
+          <button onClick={() => navigate("/localStorage")}>Local Storage</button>
+          <button onClick={() => navigate("/jsMethods")}>JS Methods</button>
+          <button onClick={() => navigate("/tables")}>Tables</button>
+          {/* <button onClick={() => navigate("/functions")}>JS Functions</button> */}
+          <button>Spread Operator</button>
+          <button>Btn7</button>
+          <button>Btn7</button>
+          <button>Btn7</button>
+
         </div>
+        {/* {getData},{getDataFromSession},{cookie} */}
       </div>
     </div>
   );
