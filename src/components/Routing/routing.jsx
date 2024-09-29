@@ -20,6 +20,7 @@ import UseReducerDemo from '../Hooks/useReducer/useReducer';
 import UseRefDemo from '../Hooks/useRef/useRef';
 import CustomHookDemo from '../Hooks/customHooks/customHooks';
 import SliceAndSplice from '../JsMethods/SliceAndSplice/sliceAndSplice';
+import PhotoAlbum from '../PhotoAlbum/album';
 
 const Routing = () => {
   return (
@@ -31,6 +32,7 @@ const Routing = () => {
           <Route path='/header' element={<Header />} />
           <Route path='/footer' element={<Footer />} />
           <Route path='/practice' element={<Practice />} />
+          <Route path='/album' element={<PhotoAlbum />} />
           <Route path='/redux' element={<Redux />} />
           <Route path='/hooks' element={<Hooks />} />
           <Route path='/hooks/useState' element={<UseStateDemo />} />

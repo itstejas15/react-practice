@@ -17,6 +17,7 @@ const HomePage = () => {
           <button onClick={() => navigate("/header")}>Header</button>
           <button onClick={() => navigate("/footer")}>Footer</button>
           <button onClick={() => navigate("/practice")}>Practice</button>
+          <button onClick={() => navigate("/album")}>Album</button>
           <button onClick={() => navigate("/redux")}>Redux</button>
           <button onClick={() => navigate("/hooks")}>Hooks</button>
           <button onClick={() => navigate("/inputTypes")}>Input Types</button>
