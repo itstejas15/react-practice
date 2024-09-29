@@ -19,6 +19,7 @@ import UseCallbackDemo from '../Hooks/useCallback/useCallback';
 import UseReducerDemo from '../Hooks/useReducer/useReducer';
 import UseRefDemo from '../Hooks/useRef/useRef';
 import CustomHookDemo from '../Hooks/customHooks/customHooks';
+import SliceAndSplice from '../JsMethods/SliceAndSplice/sliceAndSplice';
 
 const Routing = () => {
   return (
@@ -43,6 +44,7 @@ const Routing = () => {
           <Route path='/inputTypes' element={<InputTypes />} />
           <Route path='/localStorage' element={<LocalStorage />} />
           <Route path='/jsMethods' element={<JsMethods />} />
+          <Route path='/jsMethods/sliceAndSplice' element={<SliceAndSplice/>}/>
           <Route path='/tables' element={<Tables />} />
           {/* <Route path='/jsMethods' element={<LocalStorage />} /> */}
         </Routes>

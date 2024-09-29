@@ -1,11 +1,12 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Hooks = () => {
   const navigate = useNavigate();
   return (
     <div style={{ margin: '4rem' }}>
       <h1>React hooks</h1>
+      <p><Link to={'https://medium.com/@AbidKazmi/all-react-hooks-in-one-short-4b0ed4b5a6e4'}> Reference</Link></p>
       <div style={{ margin: "2rem", display: "flex", gap: "1rem", flexWrap: "wrap" }}>
         <button onClick={() => navigate("/hooks/useState")}>useState</button>
         <button onClick={() => navigate("/hooks/useEffect")}>useEffect</button>

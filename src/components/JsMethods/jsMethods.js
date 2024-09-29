@@ -25,8 +25,8 @@ const JsMethods = () => {
       <li>length()</li>
       <li>indexOf()</li>
       <li>fill()</li>
-      <li>slice</li>
-      <li>splice</li>
+      <Link to={'/jsMethods/sliceAndSplice'}> <li>slice()</li> </Link>
+      <Link to={'/jsMethods/sliceAndSplice'}> <li>splice()</li> </Link>
       <li>call()</li>
       <li>apply()</li>
       <li>bind()</li>
