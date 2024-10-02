@@ -21,6 +21,8 @@ import UseRefDemo from '../Hooks/useRef/useRef';
 import CustomHookDemo from '../Hooks/customHooks/customHooks';
 import SliceAndSplice from '../JsMethods/SliceAndSplice/sliceAndSplice';
 import PhotoAlbum from '../PhotoAlbum/album';
+import LetVarConst from '../LetVarConst/letVarConst';
+import ImpConcepts from '../ImpConcepts/impConcepts';
 
 const Routing = () => {
   return (
@@ -29,9 +31,11 @@ const Routing = () => {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/demopage' element={<DemoPage />} />
+          <Route path='/impConcepts' element={<ImpConcepts />} />
           <Route path='/header' element={<Header />} />
           <Route path='/footer' element={<Footer />} />
           <Route path='/practice' element={<Practice />} />
+          <Route path='/letVarConst' element={<LetVarConst />} />
           <Route path='/album' element={<PhotoAlbum />} />
           <Route path='/redux' element={<Redux />} />
           <Route path='/hooks' element={<Hooks />} />
