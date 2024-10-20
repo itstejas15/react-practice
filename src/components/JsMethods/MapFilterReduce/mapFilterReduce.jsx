@@ -8,6 +8,7 @@ const MapFilterReduce = () => {
 
   return (
     <div>
+      <h4>map,filter and reduce:</h4>
       <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem' }}>
         Array mapped in div element =
         {xyz.map((ele, index) => {

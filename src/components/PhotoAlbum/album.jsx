@@ -14,7 +14,7 @@ const PhotoAlbum = () => {
     fetch("https://jsonplaceholder.typicode.com/photos")
       .then(res => res.json())
       .then(data => setData(data))
-      .catch((err)=>{window.alert(`Api is expired=${err}`)})
+      .catch((err)=>{window.alert(`Album api is expired=${err}`)})
   }, [])
   // console.log('data=', data)
 

@@ -1,0 +1,63 @@
+/* Example One Flex-Box */
+.flex-container {
+  background-color: antiquewhite;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;  
+  height: 100vh;
+}
+
+.flex-item {
+  background-color: lightblue;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Example Two */
+/* .flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: #f0f0f0;
+  margin: 6rem 2rem;
+}
+
+.flex-item {
+  background-color: lightgreen;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+} */
+
+/* Example Three */
+/* .flex-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f0f0f0;
+  margin: 6rem 2rem;
+}
+
+.flex-item {
+  background-color: coral;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+} */
+
+/* Example Four Grid */
+/* .flex-container {
+  display: grid;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.flex-item {
+  background-color: coral;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+} */

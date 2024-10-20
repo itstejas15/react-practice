@@ -23,6 +23,10 @@ import SliceAndSplice from '../JsMethods/SliceAndSplice/sliceAndSplice';
 import PhotoAlbum from '../PhotoAlbum/album';
 import LetVarConst from '../LetVarConst/letVarConst';
 import ImpConcepts from '../ImpConcepts/impConcepts';
+import FlexboxAndGrid from '../FlexboxAndGrid/flexboxAndGrid';
+import Positions from '../Positions/Positions';
+import ImageSlider from '../ImageSlider/imageSlider';
+import CommentSection from '../CommentSection/commentSection';
 
 const Routing = () => {
   return (
@@ -32,11 +36,15 @@ const Routing = () => {
           <Route path='/' element={<HomePage />} />
           <Route path='/demopage' element={<DemoPage />} />
           <Route path='/impConcepts' element={<ImpConcepts />} />
+          <Route path='/flexboxAndGrid' element={<FlexboxAndGrid />} />
+          <Route path='/positions' element={<Positions />} />
           <Route path='/header' element={<Header />} />
           <Route path='/footer' element={<Footer />} />
           <Route path='/practice' element={<Practice />} />
           <Route path='/letVarConst' element={<LetVarConst />} />
           <Route path='/album' element={<PhotoAlbum />} />
+          <Route path='/image-slider' element={<ImageSlider />} />
+          <Route path='/comment-section' element={<CommentSection />} />
           <Route path='/redux' element={<Redux />} />
           <Route path='/hooks' element={<Hooks />} />
           <Route path='/hooks/useState' element={<UseStateDemo />} />

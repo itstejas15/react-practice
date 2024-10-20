@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ImpConcepts = () => {
   return (
@@ -7,15 +8,25 @@ const ImpConcepts = () => {
       <div style={{ display: 'flex', gap: '12rem' }}>
         <div>
           <h4>React JS and Html concepts</h4>
+          {/* fundamental concept or default behaviour */}
           <ol>
             <li> Data types</li>
             <li> Html symantic elements</li>
             <li> Input element types</li>
             <li> Inline, Block and Inline-Block elements</li>
-            <li> List tags in Html, like - ol,ul,li</li>
+            <li> List tags in Html, like - ol,ul,li,dl,dt,dd</li>
             <li> Table tags in Html, like - table,thead,tbody,tr,th,td</li>
             <li> Let Var Const</li>
-            <li> Scope chain and Lexical scope</li>
+            <li>
+              Scope?
+              <span title='Scope in JavaScript is the context of the code that determines where variables and functions can be accessed. The scope of a variable is the area of code where it can be accessed.'>&nbsp;&#9786;&nbsp;</span>
+              <span title='A scope in JS is like Environment where we can access a variable or state'>&nbsp;&#9786;&nbsp;</span>
+              Scope chain?
+              <span title='A scope chain is a mechanism in JavaScript that helps find the value of variable names. Its a chain of scopes that starts with the innermost scope and continues up to the global scope'>&nbsp;&#9786;&nbsp;</span>
+              and
+              Lexical scope?
+              <span title='A lexical scope is like a chain of nested scopes, Scope refers to the area where a function or variable are visible and accessible to other code'>&nbsp;&#9786;&nbsp;</span>
+            </li>
             <li> Operators</li>
             <ul>
               <li> Spread operator</li>
@@ -35,7 +46,7 @@ const ImpConcepts = () => {
             </ul>
             <li> Js Methods</li>
             <ul>
-              <li> call, apply, bind are function methods</li>
+              <li> call, apply, bind are functional methods</li>
               <li> slice and splice</li>
               <li> map, flatMap, filter, reduce are array methods</li>
               <li> push, pop, shift, unshift</li>
@@ -43,7 +54,13 @@ const ImpConcepts = () => {
               <li> find, includes, length, sort, join, some, concate</li>
             </ul>
             <li> Array and Objects</li>
-            <li> Closures in JS</li>
+            <li>
+              Closures in JS? Ref-
+              <Link to={'https://www.youtube.com/watch?v=qikxEIxsXco'}>1</Link>&nbsp;
+              <Link to={'https://www.youtube.com/watch?v=eBTBG4nda2A'}>2</Link>&nbsp;
+              <Link to={'https://www.youtube.com/watch?v=97BGPJyGKp4&list=PLB97yPrFwo5gn9mAzWNHmjxAspUSeF_nk'}>3</Link>&nbsp;
+              <span title='A closure in JS is like a function bundled together with its lexical environment forms a closure'>&#9786;</span>
+            </li>
             <li> DOM</li>
             <li> DOM Tree</li>
             <li> How to Find HTML elements</li>
@@ -69,24 +86,38 @@ const ImpConcepts = () => {
             <li> Event handlers in JS</li>
             <li> 'this' keyword in JS</li>
             <li> HOC - Higher Order Component</li>
-            <li> Hoisting and Shadowing</li>
+            <li> Hoisting? Ref-<Link to={'https://www.youtube.com/watch?v=qE47fTlX59M'}>1</Link>&nbsp;
+              and
+              Shadowing?
+              <span title='In JavaScript, shadowing is when a variable in an inner scope has the same name as a variable in an outer scope. This causes the inner variable to temporarily hide the outer variable, which can affect the visibility and access of variables in the code. 
+                    Shadowing can lead to unexpected bugs and behavior, and can make debugging more difficult. To avoid confusion and potential bugs, its recommended to: Use different variable names and Refactor the code to avoid shadowing.'>&nbsp;&#9786;&nbsp;</span>
+            </li>
             <li> Reconciliation and diffing in react</li>
-            <li> callback, promise and await</li>
+            <li>
+              callback,&nbsp;
+              promise? Ref-<Link to={'https://www.youtube.com/watch?v=zqt3MM5LZFQ&list=PLp18NAIKHWnsuszuBZoOye5SpSTgtDTl5&index=11'}>1</Link>&nbsp;
+              <Link to={'https://www.youtube.com/watch?v=AxfmqK_ZMXw'}>2</Link>&nbsp;
+              and await
+            </li>
             <ul>
               <li>promise.all</li>
               <li>promise.allSettled</li>
               <li>promise.any</li>
               <li>promise.race</li>
             </ul>
-            <li> Event propagation</li>
-            <li> Event bubbling</li>
+            <li>
+              <Link to={'https://www.youtube.com/watch?v=nhyPuULoiAE&list=PLp18NAIKHWnsuszuBZoOye5SpSTgtDTl5&index=12'}>Event propagation</Link>
+            </li>
+            <li> Event bubbling vs Event Capturing</li>
             <li> Functional component vs Class component</li>
+            <li> Parameters vs Arguments</li>
             <li> Props vs State</li>
             <li> ReactDom</li>
             <li> React router dom</li>
             <li> Redux, Redux-thunk, Redux Saga</li>
             <li> Middlewares</li>
             <li> Memorization and Optimization</li>
+            <li> Prop drilling and Callback hell</li>
             <li> ContextAPI</li>
             <li> React Hooks</li>
             <ul>
@@ -101,6 +132,7 @@ const ImpConcepts = () => {
             </ul>
             <li> Forms and React Hook Forms</li>
             <li> React vs Next JS</li>
+            <li> CSR vs SSR</li>
             <li> React vs Angular</li>
             <li> React vs Vue JS</li>
             <li> fetch vs axios</li>
@@ -110,12 +142,18 @@ const ImpConcepts = () => {
           <h4>CSS concepts</h4>
           <ol>
             <li> Box CSS</li>
+            <li> What is Cascading and cascade rule?</li>
+            <li> What is specificity?</li>
+            <li> SVG vs Canvas</li>
+            <li> CSS vs CSS3</li>
             <li> BEM (Block, Element, Modifier)</li>
             <li> Selectors in CSS</li>
+            <li> Pseudo classes : and Pseudo elements ::</li>
             <li> Responsive designs using css</li>
             <li> Media query</li>
             <li> Flexbox and Grids</li>
             <li> Position properties</li>
+            <li> visibility: 'hidden' vs display: 'none'</li>
             <li> Inline CSS</li>
             <li> Styled components</li>
             <li> CSS frameworks</li>

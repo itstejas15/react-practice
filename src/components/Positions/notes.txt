@@ -1,0 +1,13 @@
+.{
+  position: static;     --- this is default value
+  position: relative;   ---using top,right,bottom,left property we can change the position of element w.r.t its static position
+  position: absolute;   ---using top,right,bottom,left property we can change the position of element w.r.t view port screen.
+  position: fixed;     --this will fix the position of element w.r.t view port and will not change even if we scroll the screen.
+  position: sticky;   --by default it will be in its static position but when we scroll it will stick to the position which we will keep using T,B,R,L property.
+}
+
+#except for static, 4 properties come along with the position property,
+1. top:  ;
+2. bottom: ;
+3. right: ;
+4. left: ;

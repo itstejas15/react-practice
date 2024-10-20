@@ -55,7 +55,7 @@ const JsMethods = () => {
       <li>replace()</li>
       <li>replace()</li> */}
       </div>
-      <div style={{marginTop: '6rem'}}>
+      <div style={{marginTop: '3rem'}}>
         <MapFilterReduce />
       </div>
     </div>

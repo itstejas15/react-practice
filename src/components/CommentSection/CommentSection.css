@@ -1,0 +1,18 @@
+/* Add this CSS to your styles (e.g., in a CSS file) */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5); /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+  /* cursor: pointer; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.7); /* Color of the scrollbar thumb on hover */
+}
