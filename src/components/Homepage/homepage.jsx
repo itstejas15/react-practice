@@ -25,6 +25,7 @@ const HomePage = () => {
           <button onClick={() => navigate("/")}>Callback Promise Await</button>
           <button onClick={() => navigate("/album")}>Album</button>
           <button onClick={() => navigate("/image-slider")}>Image Slider</button>
+          <button onClick={() => navigate("/accordion")}>Accordion</button>
           <button onClick={() => navigate("/comment-section")}>Comment Section</button>
           <button onClick={() => navigate("/redux")}>Redux</button>
           <button onClick={() => navigate("/hooks")}>Hooks</button>

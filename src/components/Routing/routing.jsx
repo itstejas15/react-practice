@@ -27,6 +27,7 @@ import FlexboxAndGrid from '../FlexboxAndGrid/flexboxAndGrid';
 import Positions from '../Positions/Positions';
 import ImageSlider from '../ImageSlider/imageSlider';
 import CommentSection from '../CommentSection/commentSection';
+import Accordion from '../Accordion/accordion';
 
 const Routing = () => {
   return (
@@ -58,6 +59,7 @@ const Routing = () => {
           <Route path='/inputTypes' element={<InputTypes />} />
           <Route path='/localStorage' element={<LocalStorage />} />
           <Route path='/jsMethods' element={<JsMethods />} />
+          <Route path='/accordion' element={<Accordion />} />
           <Route path='/jsMethods/sliceAndSplice' element={<SliceAndSplice/>}/>
           <Route path='/tables' element={<Tables />} />
           {/* <Route path='/jsMethods' element={<LocalStorage />} /> */}
