@@ -2,11 +2,26 @@ import React, { useCallback, useState } from 'react';
 
 const CustomAccordion = ({ i, handleExpand, handleCheckbox }) => {
   return <div>
-    <div style={{ border: '1px solid gray', width: '40vw', padding: '1rem', cursor: 'pointer' }} onClick={() => handleExpand(i.id)}>
+    <div style={{ border: '1px solid gray', width: '40vw', padding: '1rem' }}>
       <span>
-        <input type='checkbox' onClick={(e) => e.stopPropagation()} value={i.checkbox} onChange={() => handleCheckbox()} />
+        <input type='checkbox' style={{ margin: '0px 20px' }} onClick={(e) => e.stopPropagation()} value={i.checkbox} onChange={() => handleCheckbox()} />
       </span>
       {i.heading}
+      {i.expand ?
+        <span style={{ float: 'right', cursor: 'pointer' }} onClick={() => handleExpand(i.id)}>
+          &uarr;
+        </span>
+        :
+        <span style={{ float: 'right', cursor: 'pointer' }} onClick={() => handleExpand(i.id)}>
+          &darr;
+        </span>
+      }
+      {/* <span style={{ float: 'right', cursor: 'pointer' }} onClick={() => handleExpand(i.id)}>
+        {i.expand ? '↑' : '↓'}
+      </span> */}
+      {/* <span style={{ float: 'right', cursor: 'pointer' }} onClick={() => handleExpand(i.id)}>
+        {i.expand ? '\u2193' : '\u2191'}
+      </span> */}
     </div>
     {i.expand && (<div style={{ border: '1px solid green', borderRadius: '5px', width: '40vw', padding: '1rem', background: 'lightgray' }}>{i.desc}</div>)}
   </div>
@@ -57,6 +72,7 @@ const Accordion = () => {
     })
     setData(updatedData)
     let disable = updatedData.some(i => i.checkbox === false);
+    // let disable = !updatedData.every(i => i.checkbox === true);
     setIsDisabled(disable)
     // setData((prev) => prev.map((t) => {
     //   return t.id === id ? { ...t, checkbox: !t.checkbox } : { ...t }
@@ -76,7 +92,7 @@ const Accordion = () => {
         return <CustomAccordion key={i.id} i={i} handleExpand={handleExpand} handleCheckbox={() => handleCheckbox(i.id)} />
       })}
 
-      <button disabled={isDisabled} style={{ margin: '2rem', padding: '0.5rem' }}>Submit</button>
+      <button disabled={isDisabled} style={{ margin: '2rem 2rem 2rem 30vw', padding: '0.5rem 1rem', cursor: 'pointer' }}>Submit</button>
     </div>
   );
 }
