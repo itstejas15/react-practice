@@ -7,14 +7,21 @@ const UseEffectDemo = () => {
 
     useEffect(() => {
         console.log('usEffect with empty dependency array')
+        //this renders only on initial load/ while component mounting phase
+        //Equivalent to componentDidMount() lifecycle method
     }, [])
 
     useEffect(() => {
         console.log('usEffect with no dependency array')
+        //this useEffect renders whenever any state gets change 
+
+        //if we use return in useEffect then it will call while componentWillUnount() phase
+        return () => console.log("unmounting");
     })
 
     useEffect(() => {
         console.log('usEffect with some (Add) dependencies ', value)
+        //Equivalent to componentDidUpdate() lifecycle method
     }, [value])
 
     return (

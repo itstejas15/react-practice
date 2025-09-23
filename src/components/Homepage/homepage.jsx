@@ -11,7 +11,7 @@ const HomePage = () => {
     <div className='App'>
       <div className="App-header" >
         <h1>Im HomePage</h1>
-        <div style={{ margin:"2rem", display: "flex", gap: "1rem", flexWrap: "wrap" }}>
+        <div style={{ margin: "2rem", display: "flex", gap: "1rem", flexWrap: "wrap" }}>
           {/* <button onClick={() => navigate("/")}>HomePage</button> */}
           <button onClick={() => navigate("/demoPage")}>DemoPage</button>
           <button onClick={() => navigate("/impConcepts")}>Imp Concepts</button>
@@ -25,6 +25,7 @@ const HomePage = () => {
           <button onClick={() => navigate("/")}>Callback Promise Await</button>
           <button onClick={() => navigate("/album")}>Album</button>
           <button onClick={() => navigate("/image-slider")}>Image Slider</button>
+          <button onClick={() => navigate("/export-csv")}>Export CSV</button>
           <button onClick={() => navigate("/accordion")}>Accordion</button>
           <button onClick={() => navigate("/comment-section")}>Comment Section</button>
           <button onClick={() => navigate("/redux")}>Redux</button>
@@ -33,6 +34,9 @@ const HomePage = () => {
           <button onClick={() => navigate("/localStorage")}>Local Storage</button>
           <button onClick={() => navigate("/jsMethods")}>JS Methods</button>
           <button onClick={() => navigate("/tables")}>Tables</button>
+          <button onClick={() => navigate("/search")}>Search</button>
+          <button onClick={() => navigate("/debounce")}>Debounce</button>
+          <button onClick={() => navigate("/forms")}>Forms</button>
           {/* <button onClick={() => navigate("/functions")}>JS Functions</button> */}
           <button>Spread Operator</button>
           <button>Btn7</button>

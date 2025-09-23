@@ -8,15 +8,16 @@
   /* grid-template-rows: 3fr; */
   /* height: 200px; */
   /* overflow: hidden; */
+  /* position: relative; */
 }
 
-.parent-c {
+/* .parent-c {
   margin: 4rem;
   border: 1px solid black;
   overflow: scroll;
   height: 500px;
   background: aqua;
-}
+} */
 
 .positions-item {
   border: 1px solid gray;

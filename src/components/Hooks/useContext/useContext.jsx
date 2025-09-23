@@ -1,7 +1,9 @@
 import React, { createContext } from 'react';
 import ChildA from './ChildA/childA';
 import { Link } from 'react-router-dom';
+
 export const data = createContext();
+
 const UseContextDemo = () => {
   const name = 'Tejas Patil'
   return (

@@ -28,6 +28,10 @@ import Positions from '../Positions/Positions';
 import ImageSlider from '../ImageSlider/imageSlider';
 import CommentSection from '../CommentSection/commentSection';
 import Accordion from '../Accordion/accordion';
+import ExportToCSV from '../ExportToCSV/exportCsv';
+import Forms from '../Forms/forms';
+import Search from '../Search/Search';
+import Debounce from '../Debouncing/debounce';
 
 const Routing = () => {
   return (
@@ -46,6 +50,7 @@ const Routing = () => {
           <Route path='/album' element={<PhotoAlbum />} />
           <Route path='/image-slider' element={<ImageSlider />} />
           <Route path='/comment-section' element={<CommentSection />} />
+          <Route path='/export-csv' element={<ExportToCSV />} />
           <Route path='/redux' element={<Redux />} />
           <Route path='/hooks' element={<Hooks />} />
           <Route path='/hooks/useState' element={<UseStateDemo />} />
@@ -62,6 +67,9 @@ const Routing = () => {
           <Route path='/accordion' element={<Accordion />} />
           <Route path='/jsMethods/sliceAndSplice' element={<SliceAndSplice/>}/>
           <Route path='/tables' element={<Tables />} />
+          <Route path='/search' element={<Search />} />
+          <Route path='/debounce' element={<Debounce />} />
+          <Route path='/forms' element={<Forms />} />
           {/* <Route path='/jsMethods' element={<LocalStorage />} /> */}
         </Routes>
       </BrowserRouter>

@@ -17,16 +17,12 @@ const ImpConcepts = () => {
             <li> List tags in Html, like - ol,ul,li,dl,dt,dd</li>
             <li> Table tags in Html, like - table,thead,tbody,tr,th,td</li>
             <li> Let Var Const</li>
-            <li>
-              Scope?
-              <span title='Scope in JavaScript is the context of the code that determines where variables and functions can be accessed. The scope of a variable is the area of code where it can be accessed.'>&nbsp;&#9786;&nbsp;</span>
-              <span title='A scope in JS is like Environment where we can access a variable or state'>&nbsp;&#9786;&nbsp;</span>
-              Scope chain?
-              <span title='A scope chain is a mechanism in JavaScript that helps find the value of variable names. Its a chain of scopes that starts with the innermost scope and continues up to the global scope'>&nbsp;&#9786;&nbsp;</span>
-              and
-              Lexical scope?
-              <span title='A lexical scope is like a chain of nested scopes, Scope refers to the area where a function or variable are visible and accessible to other code'>&nbsp;&#9786;&nbsp;</span>
+            <li> What are generator functions in js? </li>
+            <li> What are currying functions in js? </li>
+            <li> ES6 features
+              <span title='Arrow functions, Destructuring, Let and const, Spread operator, promises, modules, class'>&nbsp;&#9786;&nbsp;</span>
             </li>
+            {/* <li> What are constructor distructor in js?</li> */}
             <li> Operators</li>
             <ul>
               <li> Spread operator</li>
@@ -54,14 +50,9 @@ const ImpConcepts = () => {
               <li> find, includes, length, sort, join, some, concate</li>
             </ul>
             <li> Array and Objects</li>
-            <li>
-              Closures in JS? Ref-
-              <Link to={'https://www.youtube.com/watch?v=qikxEIxsXco'}>1</Link>&nbsp;
-              <Link to={'https://www.youtube.com/watch?v=eBTBG4nda2A'}>2</Link>&nbsp;
-              <Link to={'https://www.youtube.com/watch?v=97BGPJyGKp4&list=PLB97yPrFwo5gn9mAzWNHmjxAspUSeF_nk'}>3</Link>&nbsp;
-              <span title='A closure in JS is like a function bundled together with its lexical environment forms a closure'>&#9786;</span>
+            <li> DOM
+              <span title='The Document Object Model (DOM) is a programming interface for web documents. It has a tree like structure. and each node consist of an html element.'>&nbsp;&#9786;&nbsp;</span>
             </li>
-            <li> DOM</li>
             <li> DOM Tree</li>
             <li> How to Find HTML elements</li>
             <ul>
@@ -84,15 +75,38 @@ const ImpConcepts = () => {
               <li>cookie- 4KB</li>
             </ul>
             <li> Event handlers in JS</li>
-            <li> 'this' keyword in JS</li>
-            <li> HOC - Higher Order Component</li>
-            <li> Hoisting? Ref-<Link to={'https://www.youtube.com/watch?v=qE47fTlX59M'}>1</Link>&nbsp;
+            <li> Event Loop in JS
+              <span title='Event loop is very imp concept in js for handling the async operations, as js is a single threaded language it uses event loop to manage async tasks. Event loop constantly checks if call stack is empty or not or whether there are any pending tasks in callback queue or microtask queue'>&nbsp;&#9786;&nbsp;</span>
+            </li>
+            <li>
+              Closures in JS? Ref-
+              <Link to={'https://www.youtube.com/watch?v=qikxEIxsXco'}>1</Link>&nbsp;
+              <Link to={'https://www.youtube.com/watch?v=eBTBG4nda2A'}>2</Link>&nbsp;
+              <Link to={'https://www.youtube.com/watch?v=97BGPJyGKp4&list=PLB97yPrFwo5gn9mAzWNHmjxAspUSeF_nk'}>3</Link>&nbsp;
+              <span title='A closure in JS is a function bundled together with its lexical environment, together it forms a closure'>&#9786;</span>
+            </li>
+            <li>
+              Scope?
+              <span title='Scope in JavaScript is the context of the code that determines where variables and functions can be accessed. The scope of a variable is the area of code where it can be accessed.'>&nbsp;&#9786;&nbsp;</span>
+              <span title='A scope in JS is like Environment where we can access a variable or state'>&nbsp;&#9786;&nbsp;</span>
+              Scope chain?
+              <span title='A scope chain is a mechanism in JavaScript that helps find the value of variable names. Its a chain of scopes that starts with the innermost scope and continues up to the global scope'>&nbsp;&#9786;&nbsp;</span>
+              and
+              Lexical scope?
+              <span title='A lexical scope is like a chain of nested scopes, Scope refers to the area where a function or variable are visible and accessible to other code'>&nbsp;&#9786;&nbsp;</span>
+            </li>
+            <li> Hoisting?
+              <span title='Hoisting in js is a default phenomenon of js of moving declarations on top level of code.'>&nbsp;&#9786;&nbsp;</span>
+              Ref-<Link to={'https://www.youtube.com/watch?v=qE47fTlX59M'}>1</Link>&nbsp;
               and
               Shadowing?
               <span title='In JavaScript, shadowing is when a variable in an inner scope has the same name as a variable in an outer scope. This causes the inner variable to temporarily hide the outer variable, which can affect the visibility and access of variables in the code. 
                     Shadowing can lead to unexpected bugs and behavior, and can make debugging more difficult. To avoid confusion and potential bugs, its recommended to: Use different variable names and Refactor the code to avoid shadowing.'>&nbsp;&#9786;&nbsp;</span>
             </li>
+            <li> 'this' keyword in JS</li>
+            <li> HOC - Higher Order Component</li>
             <li> Reconciliation and diffing in react</li>
+            <li> React Portals, Fiber, Suspense, Strict Mode , concurrent mode</li>
             <li>
               callback,&nbsp;
               promise? Ref-<Link to={'https://www.youtube.com/watch?v=zqt3MM5LZFQ&list=PLp18NAIKHWnsuszuBZoOye5SpSTgtDTl5&index=11'}>1</Link>&nbsp;
@@ -105,6 +119,8 @@ const ImpConcepts = () => {
               <li>promise.any</li>
               <li>promise.race</li>
             </ul>
+            <li> promise chaining and error handling</li>
+            <li> error boundries</li>
             <li>
               <Link to={'https://www.youtube.com/watch?v=nhyPuULoiAE&list=PLp18NAIKHWnsuszuBZoOye5SpSTgtDTl5&index=12'}>Event propagation</Link>
             </li>
@@ -112,6 +128,7 @@ const ImpConcepts = () => {
             <li> Functional component vs Class component</li>
             <li> Parameters vs Arguments</li>
             <li> Props vs State</li>
+            <li> Deep vs Shallow Copy, Mutable vs Immutable objects </li>
             <li> ReactDom</li>
             <li> React router dom</li>
             <li> Redux, Redux-thunk, Redux Saga</li>
@@ -133,9 +150,13 @@ const ImpConcepts = () => {
             <li> Forms and React Hook Forms</li>
             <li> React vs Next JS</li>
             <li> CSR vs SSR</li>
+            <li> SSG in next js</li>
             <li> React vs Angular</li>
             <li> React vs Vue JS</li>
             <li> fetch vs axios</li>
+            <li> Fibonacci series using recursion</li>
+            <li> Palindrome check</li>
+            <li> Prime numbers</li>
           </ol>
         </div>
         <div>
