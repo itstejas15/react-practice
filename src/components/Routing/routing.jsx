@@ -32,6 +32,8 @@ import ExportToCSV from '../ExportToCSV/exportCsv';
 import Forms from '../Forms/forms';
 import Search from '../Search/Search';
 import Debounce from '../Debouncing/debounce';
+import LazyLoad from '../LazyLoading/LazyLoad';
+import GirdLayout from '../FlexboxAndGrid/grid';
 
 const Routing = () => {
   return (
@@ -42,6 +44,7 @@ const Routing = () => {
           <Route path='/demopage' element={<DemoPage />} />
           <Route path='/impConcepts' element={<ImpConcepts />} />
           <Route path='/flexboxAndGrid' element={<FlexboxAndGrid />} />
+          <Route path='/grid' element={<GirdLayout />} />
           <Route path='/positions' element={<Positions />} />
           <Route path='/header' element={<Header />} />
           <Route path='/footer' element={<Footer />} />
@@ -65,11 +68,12 @@ const Routing = () => {
           <Route path='/localStorage' element={<LocalStorage />} />
           <Route path='/jsMethods' element={<JsMethods />} />
           <Route path='/accordion' element={<Accordion />} />
-          <Route path='/jsMethods/sliceAndSplice' element={<SliceAndSplice/>}/>
+          <Route path='/jsMethods/sliceAndSplice' element={<SliceAndSplice />} />
           <Route path='/tables' element={<Tables />} />
           <Route path='/search' element={<Search />} />
           <Route path='/debounce' element={<Debounce />} />
           <Route path='/forms' element={<Forms />} />
+          <Route path='/lazyload' element={<LazyLoad />} />
           {/* <Route path='/jsMethods' element={<LocalStorage />} /> */}
         </Routes>
       </BrowserRouter>

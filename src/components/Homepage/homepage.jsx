@@ -15,7 +15,8 @@ const HomePage = () => {
           {/* <button onClick={() => navigate("/")}>HomePage</button> */}
           <button onClick={() => navigate("/demoPage")}>DemoPage</button>
           <button onClick={() => navigate("/impConcepts")}>Imp Concepts</button>
-          <button onClick={() => navigate("/flexboxAndGrid")}>FlexBox & Grid</button>
+          <button onClick={() => navigate("/flexboxAndGrid")}>FlexBox</button>
+          <button onClick={() => navigate("/grid")}>Grid</button>
           <button onClick={() => navigate("/letVarConst")}>Let Var Const</button>
           <button onClick={() => navigate("/")}>Box CSS </button>
           <button onClick={() => navigate("/positions")}>Positions</button>
@@ -37,6 +38,7 @@ const HomePage = () => {
           <button onClick={() => navigate("/search")}>Search</button>
           <button onClick={() => navigate("/debounce")}>Debounce</button>
           <button onClick={() => navigate("/forms")}>Forms</button>
+          <button onClick={() => navigate("/lazyload")}>Lazy Loading</button>
           {/* <button onClick={() => navigate("/functions")}>JS Functions</button> */}
           <button>Spread Operator</button>
           <button>Btn7</button>

@@ -2,6 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ImpConcepts = () => {
+  let a = {
+    name: "Tejas"
+  }
+  a.__proto__ = {
+    age: 28
+  }
+  console.log(a.age);
+
   return (
     <div style={{ margin: '2rem' }}>
       <h1>Important concepts</h1>
@@ -95,7 +103,7 @@ const ImpConcepts = () => {
               Lexical scope?
               <span title='A lexical scope is like a chain of nested scopes, Scope refers to the area where a function or variable are visible and accessible to other code'>&nbsp;&#9786;&nbsp;</span>
             </li>
-            <li> Hoisting?
+            <li> Hoisting? and TDZ?
               <span title='Hoisting in js is a default phenomenon of js of moving declarations on top level of code.'>&nbsp;&#9786;&nbsp;</span>
               Ref-<Link to={'https://www.youtube.com/watch?v=qE47fTlX59M'}>1</Link>&nbsp;
               and
@@ -157,6 +165,8 @@ const ImpConcepts = () => {
             <li> Fibonacci series using recursion</li>
             <li> Palindrome check</li>
             <li> Prime numbers</li>
+            <li> What are pure components in React?</li>
+            <li> What is prototype in JS? and prototypal inheritance?</li>
           </ol>
         </div>
         <div>
